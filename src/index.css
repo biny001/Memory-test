@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,300;0,400;0,700;1,500&display=swap");
+
+/*
+dark:#37392E;
+grey:#8D98A7;
+light:#EFF7CF;
+
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100dvh;
+  font-size: 2rem;
+  background-color: #37392e;
+  color: #eff7cf;
+  cursor: pointer;
+  font-family: "Exo 2", sans-serif;
+  z-index: 1;
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem;
+  margin: 0 3rem;
+  margin-bottom: 3rem;
+}
+
+.navbar h1 {
+  font-size: 5rem;
+  background: linear-gradient(to right, #506292, #afbcce);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.stats {
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin: 0 auto; /* Center the grid container and provide equal margin */
+  max-width: 1200px;
+  margin-top: 6rem;
+  padding-bottom: 3rem;
+  font-family: "Exo 2", sans-serif;
+}
+
+.card {
+  border-radius: 8px;
+  overflow: hidden;
+  /* box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5); */
+  box-shadow: rgba(145, 145, 145, 0.35) 0px 5px 15px;
+  padding: 0.6rem;
+  z-index: 10;
+  transition: all 0.3s;
+  text-align: center;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Zoom in effect on hover */
+  box-shadow: rgba(250, 176, 176, 0.55) 0px 5px 15px;
+}
+
+.card:active {
+  transform: scale(0.98);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card .description {
+  padding: 15px;
+}
+@media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .navbar h1 {
+    font-size: 3.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
