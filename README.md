@@ -1,8 +1,25 @@
-# React + Vite
+# Memory Test Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the Memory Test Game! Test your memory by clicking on each image only once. Clicking on the same image more than once will result in a loss. Can you remember the locations of all the images and win the game?
 
-Currently, two official plugins are available:
+## How to Play
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. **Click on an Image:**
+   - Click on an image to reveal it.
+
+2. **Remember the Images:**
+   - Memorize the location of each image.
+
+3. **Avoid Clicking on the Same Image Twice:**
+   - Clicking on the same image more than once will end the game.
+
+4. **Winning:**
+   - Successfully click on each image exactly once to win the game.
+
+## Getting Started
+
+Follow these steps to run the game on your local machine:
+
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/your-username/memory-test-game.git
