@@ -22,4 +22,10 @@ Follow these steps to run the game on your local machine:
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/memory-test-game.git
+   git clone https://github.com/biny001/Memory-test.git
+   cd Memory-test
+   npm install
+   npm start
+
+
+
