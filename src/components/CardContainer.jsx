@@ -1,5 +1,6 @@
 import { useState } from "react";
 import CardItem from "./CardItem";
+import Result from "./Result";
 
 function CardContainer({
   score,
@@ -7,6 +8,8 @@ function CardContainer({
   setCharData,
   setScore,
   setHighScore,
+  setResult,
+  result,
 }) {
   const [clickCounts, setClickCounts] = useState({});
 
@@ -22,6 +25,8 @@ function CardContainer({
       if (currentClickCount < 1) {
         return prev + 1;
       } else {
+        setResult(true);
+
         setHighScore((prevScore) => {
           if (score >= prevScore) {
             return score;
@@ -29,6 +34,7 @@ function CardContainer({
             return prevScore;
           }
         });
+
         setClickCounts({});
         return 0;
       }
@@ -40,7 +46,13 @@ function CardContainer({
       // return shuffledData;
     });
   }
-  return (
+  return result || score == 12 ? (
+    <Result
+      score={score}
+      setResult={setResult}
+      setScore={setScore}
+    />
+  ) : (
     <ul className="grid-container">
       {charData.map((char) => (
         <CardItem
@@ -50,8 +62,6 @@ function CardContainer({
           clickCounts={clickCounts}
         />
       ))}
-
-      <CardItem />
     </ul>
   );
 }

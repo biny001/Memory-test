@@ -79,6 +79,32 @@ body {
   transform: scale(0.98);
 }
 
+button {
+  background-color: rgba(124, 107, 106, 0.192);
+  padding: 1.5rem;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: #494f57 0px 5px 15px;
+  color: #c5ccd6;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1f1f1e;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .card img {
   width: 100%;
   height: auto;

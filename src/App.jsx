@@ -2,11 +2,14 @@ import { useState } from "react";
 import CardContainer from "./components/CardContainer";
 import Navbar from "./components/Navbar";
 import { useEffect } from "react";
+import Result from "./components/Result";
 
 export default function App() {
   const [charData, setCharData] = useState([]);
   const [score, setScore] = useState(0);
   const [highScore, setHighScore] = useState(score);
+  const [result, setResult] = useState(false);
+
   useEffect(function () {
     async function GetCharData() {
       try {
@@ -29,12 +32,15 @@ export default function App() {
         score={score}
         highScore={highScore}
       />
+
       <CardContainer
         charData={charData}
         setCharData={setCharData}
         setScore={setScore}
         setHighScore={setHighScore}
         score={score}
+        setResult={setResult}
+        result={result}
       />
     </div>
   );
