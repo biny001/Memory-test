@@ -38,6 +38,12 @@ body {
   margin-bottom: 3rem;
 }
 
+.rule {
+  font-size: 1.6rem;
+  position: absolute;
+  bottom: 0;
+}
+
 .navbar h1 {
   font-size: 5rem;
   background: linear-gradient(to right, #506292, #afbcce);
