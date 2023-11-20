@@ -1,14 +1,14 @@
-# Memory Test Game
+# 🤯 Memory Test Game
 
 Welcome to the Memory Test Game! Test your memory by clicking on each image only once. Clicking on the same image more than once will result in a loss. Can you remember the locations of all the images and win the game?
 
 ## How to Play
 
 1. **Click on an Image:**
-   - Click on an image to reveal it.
+   - Click on  image once
 
 2. **Remember the Images:**
-   - Memorize the location of each image.
+   - Remember the images you clicked
 
 3. **Avoid Clicking on the Same Image Twice:**
    - Clicking on the same image more than once will end the game.
